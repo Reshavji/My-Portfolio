@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  color: #000;
+}
+
+.red{
+color: red;
+}
+.green{
+  color: rgb(0, 83, 55);
+}
+.btn{
+  background-color: tomato;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+}
