@@ -1,17 +1,21 @@
-.App {
-  text-align: center;
-  color: #000;
+.App{
+  background: rgb(139, 92, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(139, 92, 246, 1) 0%,
+    rgba(227, 155, 215, 1) 17%,
+    rgba(227, 155, 215, 0) 47%,
+    rgba(227, 155, 215, 1) 83%,
+    rgba(139, 92, 246, 1) 100%
+    
+  );
+  height: 100vh;
+    width: 100%;
 }
-
-.red{
-color: red;
-}
-.green{
-  color: rgb(0, 83, 55);
-}
-.btn{
-  background-color: tomato;
-  padding: 10px 20px;
-  border: none;
-  color: white;
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 80px;
+  opacity: 0.3;
+  z-index: 0; /* This ensures the canvas is positioned behind other content */
 }

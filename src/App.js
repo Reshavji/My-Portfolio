@@ -1,15 +1,20 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import Home from './Components/Home';
 
-const App = () => {
-
-console.log(+"Hello");
+function App() {
   return (
-    <div className="App">
-      <h1>Timer</h1>
-      
+    <div className="app">
+      <div className="app__top"></div>
+      <div className="app__container">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Redirect to="/" />
+        </Switch>
+      </div>
     </div>
   );
-};
+}
 
 export default App;
