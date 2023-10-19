@@ -18,11 +18,14 @@
     margin: 10px 150px ;
 }
 .ex-box{
-    width: 100%;
+    width: 90%;
     height: 150px;
     padding: 20px;
     border-radius: 10px;
     background-color: #0b0b13;
+}
+.ex-box:hover {
+  box-shadow: 1px 2px 5px 5px rgba(62, 62, 64, 0.182); 
 }
 .ex-tag{
     display: inline-block;
@@ -37,6 +40,12 @@
     flex-wrap: wrap;
     gap: 5px;
 }
+.ex-cp{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 75%;
+}
 .ex-cp-tag{
     height: 100px;
     display: flex;
@@ -46,9 +55,14 @@
 .ex-cp-name{
     display: inline-block;
     width: 100%;
-    padding: 5px 15px;
     font-size: 1.3rem;
     font-weight: 500;
+}
+.ex-work{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 .ex-btn{
     font-family: Arial, sans-serif;
@@ -90,20 +104,20 @@
     -webkit-text-fill-color: transparent;
     transform-origin: bottom;
     transform: rotateX(0deg);
-    animation: getUp 8s infinite;
+    animation: staranim 8s infinite;
   }
   
-  @keyframes getUp {
-    10% {
-      transform: rotateX(10deg);
+  @keyframes staranim {
+    0% {
+      transform: rotateX(0deg);
     }
-    20% {
-        transform: rotateX(20deg);
-      }
-    
+    10% {
+      transform: rotateX(20deg);
+    }
+
 
     0%, 60%, 100% {
-      transform: rotateX(0);
+      transform: rotateX(0deg);
     }
   }
   

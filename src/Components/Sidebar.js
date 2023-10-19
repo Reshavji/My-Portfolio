@@ -14,7 +14,7 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <div className='logo'>R</div>
+      <div className='logo' title='Reshav Ji'>R</div>
       <div className='nav-icon'>
         <ul>
         <Link to="/home">
@@ -28,16 +28,17 @@ function Sidebar() {
               <PersonIcon fontSize='large' />
             </li>
           </Link>
-          <Link to="/experience">
-            <li title='Experience' className={pathname === '/experience' ? 'active' : ''}>
+          <Link to="/details">
+            <li title='Details' className={pathname === '/details' ? 'active' : ''}>
             <DescriptionIcon fontSize='large' />
             </li>
           </Link>
-          <Link to="/work">
-            <li title='Work' className={pathname === '/work' ? 'active' : ''}>
+          <Link to="/experience">
+            <li title='Experience' className={pathname === '/experience' ? 'active' : ''}>
             <WorkOutlineIcon fontSize='large' />
             </li>
           </Link>
+          
           <Link to="/blog">
             <li title='Blog' className={pathname === '/blog' ? 'active' : ''}>
             <FormatBoldIcon fontSize='large' />
