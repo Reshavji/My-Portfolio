@@ -7,6 +7,7 @@ import About from './About/About';
 import Experience from './Experience/Experience';
 import Animation from './Animation/Animation';
 import Details from './Details/Details';
+import Blog from './Blog/Blog';
 const Home = () => {
   
   return (
@@ -24,6 +25,7 @@ const Home = () => {
               <Route path="/about" component={About} /> 
               <Route path="/details" component={Details} /> 
               <Route path="/experience" component={Experience} /> 
+              <Route path="/blog" component={Blog} /> 
               <Redirect exact from="/" to="/home" />
             </Switch>
             </div>

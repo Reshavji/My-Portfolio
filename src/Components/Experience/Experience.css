@@ -43,7 +43,7 @@
 .ex-cp{
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 0px 10px;
   width: 75%;
 }
 .ex-cp-tag{
