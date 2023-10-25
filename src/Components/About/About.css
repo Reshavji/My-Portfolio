@@ -106,7 +106,7 @@ th{
     color: #ff9301;
     font-weight: 700;
 }
-td{
+td,a{
     color: hsla(0,0%,100%,.8);
 }
   th, td {
