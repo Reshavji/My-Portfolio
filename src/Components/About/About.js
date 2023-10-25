@@ -1,9 +1,9 @@
 import React from "react";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import InstagramIcon from "@material-ui/icons/Instagram";
+// import FacebookIcon from "@material-ui/icons/Facebook";
+// import LinkedInIcon from "@material-ui/icons/LinkedIn";
+// import TwitterIcon from "@material-ui/icons/Twitter";
+// import GitHubIcon from "@material-ui/icons/GitHub";
+// import InstagramIcon from "@material-ui/icons/Instagram";
 import "./About.css";
 import Profile from "../../images/Reshavji.gif";
 function About() {
