@@ -1,5 +1,7 @@
 import React,{useEffect} from "react";
 import Profile from "../../images/Reshavji.gif";
+import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
+import PhoneAndroidOutlinedIcon from '@material-ui/icons/PhoneAndroidOutlined';
 import "./Main.css";
 function Main() {
   useEffect(() => {
@@ -51,8 +53,8 @@ function Main() {
   return (
     <div className="container">
     <div className="header">
-       <div className="number"><span>+91-9837758354</span></div>
-       <div className="email"><span>reshavkumar9837@gmail.com</span></div>
+       <div className="number"><div className="icon"><PhoneAndroidOutlinedIcon /></div><span><a href="tel:+91-9837758354">+91-9837758354</a></span></div>
+       <div className="email"><div className="icon"><EmailOutlinedIcon  /></div><span><a href="mailto:reshavkumar9837@gmail.com">reshavkumar9837@gmail.com</a></span></div>
     </div>
     <div className="main">
       <div className="main-text">

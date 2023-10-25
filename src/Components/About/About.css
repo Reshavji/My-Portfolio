@@ -6,18 +6,22 @@
     flex-wrap: wrap;
     background-color: #0e0e17;
     position: relative;
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden;
     opacity: 0;
-    transform: scale(0.8); /* Initial size (scaled down) */
-    animation: zoomIn 0.1s forwards; /* Apply zoomIn animation */
-    animation-delay: 0.1s; /* Delay the animation for 0.5 seconds */
+    transform: scale(0.8);
+    animation: zoomIn 0.1s forwards;
+    animation-delay: 0.1s; 
 }
 
 @keyframes zoomIn {
-    to {
-        opacity: 1;
-        transform: scale(1); /* Zoom in to full size */
-    }
+   0% {
+      opacity: 0;
+      transform: scale(0);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
 }
 
 
@@ -137,7 +141,7 @@ td{
     transform:rotateX(-85deg);
     -webkit-transform-origin:right;
     -webkit-transform:rotateX(-85deg);
-    animation:getUp 7s infinite;
+    animation:getUp 5s infinite;
  }
  #gap{
     margin-left: 10px;

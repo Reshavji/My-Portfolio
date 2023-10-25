@@ -9,19 +9,7 @@ import Hotel from "../../images/Hotel.gif";
 const Blog = () => {
   return (
     <div className="blog">
-      <div className="blog-data">
-        <h2 className="first-tag">Latest Blog</h2>
-        <div className="blog-container">
-          <div className="blog-item">
-            <div className="blog-img"></div>
-            <h2>Rjitech</h2>
-          </div>
-          <div className="blog-item">
-            <div className="blog-img2"></div>
-            <h2>Rjihack</h2>
-          </div>
-        </div>
-      </div>
+    
       <div className="project">
       <div className="blog-data">
         <h2 className="first-tag">Projects</h2>
@@ -59,7 +47,7 @@ const Blog = () => {
                 <div className="project-img">
                     <img id="movie-img" src={Cybrary} alt="Movie" />
                     </div>
-                    <h3 className="project-title" >Cybrary</h3>
+                    <h3 className="project-title" >Cybria</h3>
              </div>
              </a>
              <a href="https://neon-wisp-288f78.netlify.app/" target="no_follow"> 
@@ -83,6 +71,19 @@ const Blog = () => {
             
         </div>
       </div>
+      </div>
+      <div className="blog-data">
+        <h2 className="first-tag">Latest Blog</h2>
+        <div className="blog-container">
+          <div className="blog-item">
+            <div className="blog-img"></div>
+            <a href="https://rjihack.blogspot.com" target="no-follow"> <h2>Rjitech</h2></a>
+          </div>         
+          <div className="blog-item">
+            <div className="blog-img2"></div>
+            <a href="https://rjihack.blogspot.com" target="no-follow"> <h2>Rjihack</h2></a>
+          </div>
+        </div>
       </div>
     </div>
   );

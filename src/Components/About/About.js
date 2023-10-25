@@ -1,4 +1,9 @@
 import React from "react";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import InstagramIcon from "@material-ui/icons/Instagram";
 import "./About.css";
 import Profile from "../../images/Reshavji.gif";
 function About() {
@@ -57,12 +62,12 @@ function About() {
           <td>Reshav Kumar</td>
         </tr>
         <tr>
-          <th>Birthday:-</th>
-          <td>4th April 1994</td>
+        <th>Phone:-</th>
+          <td><a href="tel:+91-9837758354">+91-9837758354</a></td>
         </tr>
         <tr>
-          <th>Age:-</th>
-          <td>26 years</td>
+        <th>Email:-</th>
+          <td><a href="mailto:reshavkumar9837@gmail.com">reshavkumar9837@gmail.com</a></td>
         </tr>
         <tr>
           <th>Address:-</th>
@@ -74,12 +79,11 @@ function About() {
       <table>
         <tr>
           <th>Phone:-</th>
-          <td>(+91) 9837758354</td>
+          <td><a href="tel:+91-9837758354">+91-9837758354</a></td>
         </tr>
         <tr>
           <th>Email:-</th>
-          <td>reshavkumar9837@gmail.com</td>
-        </tr>
+           </tr>
         <tr>
           <th>Skype:-</th>
           <td>nairob.40</td>
