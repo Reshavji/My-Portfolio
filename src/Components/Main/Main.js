@@ -49,6 +49,7 @@ function Main() {
         clearInterval(interval1);
       };
     }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="container">
