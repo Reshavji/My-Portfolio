@@ -2,7 +2,7 @@ import React from 'react';
 import "./Details.css";
 function Details() {
     const skills = [
-        { name: 'HTML5', percentage: 90 },
+        { name: 'HTML/CSS', percentage: 90 },
         { name: 'Java Script', percentage: 75 },
         { name: 'React JS', percentage: 70 },
         { name: 'Java', percentage: 70 },
