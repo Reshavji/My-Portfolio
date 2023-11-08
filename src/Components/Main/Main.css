@@ -145,12 +145,13 @@
     .main {
       width: 80%;
       flex-wrap: nowrap;
+      margin: 50px 30px;
       flex-direction: column-reverse;
-      justify-content: center;
+      justify-content:flex-end;
       align-items: center;
     }
     .main-text{
-      padding: 20px 0px;
+      padding: 50px 10px;
         width: 100%;
     }
     #name {
