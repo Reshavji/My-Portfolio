@@ -150,6 +150,7 @@
     }
     .main-text{
       padding: 0px 10%;
+      width: 100%;
     }
     #name {
       font-size: 3rem;
