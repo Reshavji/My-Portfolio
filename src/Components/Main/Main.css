@@ -146,10 +146,11 @@
       width: 80%;
       flex-wrap: nowrap;
       flex-direction: column-reverse;
+      justify-content: center;
       align-items: center;
     }
     .main-text{
-      padding: 10px;
+      padding: 20px 0px;
         width: 100%;
     }
     #name {
