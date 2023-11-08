@@ -1,3 +1,7 @@
+.container{
+  height: 100vh;
+  width: 100%;
+}
 .main{
    height: 100vh;
    width: 100%;
@@ -139,10 +143,13 @@
   }
   @media screen and (max-width: 768px) {
     .main {
-      width: 100%;
+      width: 80%;
       flex-wrap: nowrap;
       flex-direction: column-reverse;
       align-items: center;
+    }
+    .main-text{
+      padding: 0px 10%;
     }
     #name {
       font-size: 3rem;
@@ -156,12 +163,6 @@
       width: 200px;
     }
  
-    .header,
-    .main-text,
-    .sub-title {
-      padding: 0px 2%;
-    }
-  
     .sub-title {
       width: 100%;
       padding: 0px 45px 0px 0px;
