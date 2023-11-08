@@ -9,18 +9,18 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    height: 60vh;
+    height: auto;
     justify-content: space-between;
     gap: 20px;
     padding: 7% 10% 0px;
 }
 .contact-box1{
-     width: 30%;
+     width: 35%;
      height: 100%;
      padding: 10px;
 }
 .contact-box2{
-    width: 70%;
+    width: 65%;
     height: 100%;
     padding: 10px;
 }
@@ -71,7 +71,9 @@ textarea {
 }
 .contact-icon{
     padding: 25px 0px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
 }
@@ -106,10 +108,11 @@ textarea {
 }
 @media screen and (max-width: 768px) {
     .contact-data {
+        height: auto;
         flex-wrap: wrap !important;
         flex-direction: row;
     }
-.contact-box1{
+  .contact-box1{
     width: 100%;
     height: auto;
 }
@@ -117,7 +120,7 @@ textarea {
     width: 100%;
 }
 .map-box{
-    float:inline-end;
+position: relative;
 }
     .footer {
         flex-direction: row;

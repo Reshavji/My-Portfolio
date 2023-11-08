@@ -141,13 +141,19 @@
     .main {
       width: 100%;
       flex-wrap: nowrap;
+      flex-direction: column-reverse;
       align-items: center;
     }
     #name {
       font-size: 3rem;
   }
     .profile {
-     display: none;
+      height: 700px;
+      width: 220px;
+    }
+    #profile{
+      height: 193px;
+      width: 205px;
     }
  
     .header,
