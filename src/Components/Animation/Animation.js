@@ -96,6 +96,7 @@ function Animation() {
       return () => {
         canvas.removeEventListener('mousemove', handleMouseMove);
       };
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []); 
   
     return <canvas ref={canvasRef} className="canvas"></canvas>;
