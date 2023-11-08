@@ -5,7 +5,6 @@ import './Home.css';
 import Main from './Main/Main';
 import About from './About/About';
 import Experience from './Experience/Experience';
-import Animation from './Animation/Animation';
 import Details from './Details/Details';
 import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
@@ -19,7 +18,6 @@ const Home = () => {
           <Sidebar  />
           </div>
           <div className='item2'>
-          <Animation />
             <div className='container-flex'>     
             <Switch>
               <Route path="/home" component={Main} />   

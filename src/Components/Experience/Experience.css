@@ -1,7 +1,8 @@
 .experience{
     height: 100vh;
     width: 100%;
-    border: 1px solid white;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .ex-data{
   margin: 90px 150px 40px 150px;
@@ -11,14 +12,15 @@
     width: 80%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 30px;
     
     margin: 10px 150px ;
 }
 .ex-box{
     width: 90%;
-    height: 150px;
+    height: auto;
+    min-height: 150px;
     padding: 20px;
     border-radius: 10px;
     background-color: #0b0b13;
@@ -119,3 +121,18 @@
       transform: rotateX(0deg);
     }
   }
+  @media screen and (max-width: 1024px) {
+    
+   .ex-box{
+    width: 90%;
+    height: auto;
+   }
+   .ex-cp-tag{
+       width: 100%;
+       border-right: none;
+       border-bottom: 1px solid rgb(62, 52, 52);
+   }
+   .ex-cp{
+    width: 100%;
+   }
+}

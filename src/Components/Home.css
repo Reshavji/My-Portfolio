@@ -14,6 +14,10 @@
   .item1{
     width: 5.2%;
     max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #0c0c14;
     overflow: hidden;
   }
   .container-flex{

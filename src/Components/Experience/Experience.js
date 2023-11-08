@@ -2,7 +2,7 @@ import React from "react";
 import "./Experience.css";
 function Experience() {
   return (
-    <div classname="experience">
+    <div className="experience">
       <div className="ex-data">
         <h2 className="first-tag">Experience</h2>
       </div>
