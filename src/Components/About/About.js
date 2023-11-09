@@ -77,6 +77,10 @@ function About() {
     </div>
     <div class="column">
       <table>
+      <tr>
+          <th>Qualification-</th>
+          <td>Graduate</td>
+        </tr>
         <tr>
           <th>Website:-</th>
           <td><a href="https://rjitech.blogspot.com">Rjitech</a></td>
