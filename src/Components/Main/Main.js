@@ -68,7 +68,10 @@ function Main() {
             specializing in creating stylish, modern websites, web services and
             online stores.
           </p>
-          <button className="main-btn" >Download CV</button>
+          <a href="https://github.com/Reshavji/My-Portfolio/raw/main/ReshavResume.pdf" download>
+  <button className="main-btn">Download CV</button>
+</a>
+
       </div>
       <div className="profile">
         <img id="profile" src={Profile} alt="Profile" />

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Experience.css";
+import Slider from "../Slider/Slider";
 function Experience() {
   return (
     <div className="experience">
@@ -46,6 +47,7 @@ function Experience() {
           </div>
         </div>
       </div>
+      <Slider />
     </div>
   );
 }
