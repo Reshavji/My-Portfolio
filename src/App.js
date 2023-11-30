@@ -7,9 +7,7 @@ function App() {
 
   return (
     <div className="app"><Animation />
-      <div className="app__top"></div>
       <div className="app__container">
-        
         <Switch>
           <Route exact path="/" component={Home} />
           <Redirect to="/" />

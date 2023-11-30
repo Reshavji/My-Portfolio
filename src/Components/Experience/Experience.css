@@ -122,15 +122,18 @@
     }
   }
   @media screen and (max-width: 1024px) {
-    
+    .ex-details{
+      margin: auto;
+    }
    .ex-box{
     width: 90%;
     height: auto;
     max-height: 520px;
    }
    .ex-cp-tag{
-       width: 100%;
+      width: auto;
        border-right: none;
+      padding-bottom: 20px;
        border-bottom: 1px solid rgb(62, 52, 52);
    }
    .ex-cp{

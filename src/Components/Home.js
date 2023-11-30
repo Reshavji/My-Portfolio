@@ -9,7 +9,6 @@ import Experience from './Experience/Experience';
 import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
 import Sidebar from './Sidebar';
-import ScrollTracker from './ScrollTracker'; // Import ScrollTracker component
 
 const Home = () => {
   return (
@@ -20,7 +19,6 @@ const Home = () => {
             <Sidebar />
           </div>
           <div className='item2'>
-            <ScrollTracker />
             <div className='container-flex'>
               <Switch>
                 <Route path="/home" component={Main} />

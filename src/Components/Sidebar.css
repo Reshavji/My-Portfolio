@@ -12,19 +12,22 @@
 
 /* Logo styles */
 .logo {
-  height: 80px;
-  width: 80px;
+  height: 11vh; /* 10% of the viewport height */
+  width: 11vh; /* 10% of the viewport height (maintaining a square shape) */
   position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  left: 0; /* Stick to the left of the viewport */
   background: #ff9301;
   color: #fff; 
-  padding: 20px;
+  padding: 2vh; /* Padding in relation to the viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 8vh; /* Font size based on the viewport height */
+  font-weight: 700;
   text-decoration: none;
 }
+
 
 /* Navigation link styles */
 .nav-icon {

@@ -1,7 +1,7 @@
 .home {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100vhz;
     overflow: hidden;
     background-color: black;
   }
