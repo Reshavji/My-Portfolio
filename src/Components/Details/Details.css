@@ -27,7 +27,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 20px;
-    height: 100%;
+    height: auto;
     width: 100%;
     padding: 30px 30px;
     background-color: #0b0b13;
