@@ -60,7 +60,7 @@
 }
 
 .item1 {
-  width: 5.2%;
+  width: 7.2%;
   max-height: 100vh;
   overflow: hidden;
 }
@@ -70,7 +70,7 @@
 }
 
 .item2 {
-  width: 94.8%;
+  width: 92.8%;
   display: flex;
   flex-direction: column;
   height: 100vh;
