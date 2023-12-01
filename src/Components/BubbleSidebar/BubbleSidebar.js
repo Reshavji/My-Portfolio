@@ -13,7 +13,7 @@ const BubbleSidebar = () => {
   const { pathname } = location;
   const [isOpen, setIsOpen] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
-  const [position, setPosition] = useState({ x: 100, y: 20 });
+  const [position, setPosition] = useState({ x: "50%", y: "92%" });
   const bubbleRef = useRef(null);
   const prevPositionRef = useRef({ x: 100, y: 20 });
   const [activeIcon, setActiveIcon] = useState(pathname);
