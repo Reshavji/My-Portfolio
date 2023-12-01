@@ -59,10 +59,17 @@ const BubbleSidebar = () => {
     prevPositionRef.current = { x: touch.clientX, y: touch.clientY };
   };
 
-  const handleBubbleClick = () => {
-    setIsOpen(!isOpen);
+  const handleBubbleClick = (event) => {
+    // Check if an icon inside the sidebar has been clicked
+    const isIconClicked = event.target.classList.contains('nav-item');
+  
+    if (!isIconClicked) {
+      // Prevent the default action (routing) if the bubble itself is clicked
+      event.preventDefault();
+      setIsOpen(!isOpen); // Toggle the sidebar if the bubble is clicked
+    }
   };
-
+  
   return (
     <div
       ref={bubbleRef}
