@@ -28,33 +28,35 @@ const BubbleSidebar = () => {
   ];
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
+    const handleTouchMove = (event) => {
       if (isDragging) {
-        const deltaX = event.clientX - prevPositionRef.current.x;
-        const deltaY = event.clientY - prevPositionRef.current.y;
+        const touch = event.touches[0];
+        const deltaX = touch.clientX - prevPositionRef.current.x;
+        const deltaY = touch.clientY - prevPositionRef.current.y;
         const newPosX = position.x + deltaX;
         const newPosY = position.y + deltaY;
         setPosition({ x: newPosX, y: newPosY });
-        prevPositionRef.current = { x: event.clientX, y: event.clientY };
+        prevPositionRef.current = { x: touch.clientX, y: touch.clientY };
       }
     };
 
-    const handleMouseUp = () => {
+    const handleTouchEnd = () => {
       setIsDragging(false);
     };
 
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseup', handleMouseUp);
+    document.addEventListener('touchmove', handleTouchMove);
+    document.addEventListener('touchend', handleTouchEnd);
 
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchend', handleTouchEnd);
     };
   }, [isDragging, position.x, position.y]);
 
-  const handleBubbleMouseDown = (event) => {
+  const handleBubbleTouchStart = (event) => {
+    const touch = event.touches[0];
     setIsDragging(true);
-    prevPositionRef.current = { x: event.clientX, y: event.clientY };
+    prevPositionRef.current = { x: touch.clientX, y: touch.clientY };
   };
 
   const handleBubbleClick = () => {
@@ -66,18 +68,18 @@ const BubbleSidebar = () => {
       ref={bubbleRef}
       className='bubble'
       style={{ top: position.y, left: position.x }}
-      onMouseDown={handleBubbleMouseDown}
+      onTouchStart={handleBubbleTouchStart}
       onClick={handleBubbleClick}
-    ><div className='icons'>
-    {Icon ? Icon : menuItems.length > 0 && menuItems[0].icon}
-  </div>
-  
+    >
+      <div className='icons'>
+        {Icon ? Icon : menuItems.length > 0 && menuItems[0].icon}
+      </div>
       <div className={`bubble-nav${isOpen ? ' open' : ''}`}>
         {menuItems.map((item, index) => (
           <Link key={index} to={item.path}>
             <div
               className={`nav-item ${activeIcon === item.path ? 'active' : ''}`}
-              onClick={() => {setActiveIcon(item.path); setIcon(item.icon);}}
+              onClick={() => { setActiveIcon(item.path); setIcon(item.icon); }}
             >
               {item.icon}
             </div>
