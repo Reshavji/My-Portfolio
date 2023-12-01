@@ -9,6 +9,7 @@ import Experience from './Experience/Experience';
 import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
 import Sidebar from './Sidebar';
+import BubbleSidebar from './BubbleSidebar/BubbleSidebar';
 
 const Home = () => {
   return (
@@ -17,10 +18,13 @@ const Home = () => {
         <div className='flex-container'>
           <div className='item1'>
             <Sidebar />
+            
           </div>
           <div className='item2'>
             <div className='container-flex'>
+            <BubbleSidebar />
               <Switch>
+              
                 <Route path="/home" component={Main} />
                 <Route path="/about" component={About} />
                 <Route path="/details" component={Details} />

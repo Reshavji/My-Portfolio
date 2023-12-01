@@ -12,8 +12,8 @@
 
 /* Logo styles */
 .logo {
-  height: 11vh; /* 10% of the viewport height */
-  width: 11vh; /* 10% of the viewport height (maintaining a square shape) */
+  height: 12vh; /* 10% of the viewport height */
+  width: 100%; /* 10% of the viewport height (maintaining a square shape) */
   position: sticky;
   top: 0; /* Stick to the top of the viewport */
   left: 0; /* Stick to the left of the viewport */
