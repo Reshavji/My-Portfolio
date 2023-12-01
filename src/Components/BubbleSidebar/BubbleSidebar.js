@@ -50,10 +50,6 @@ const BubbleSidebar = () => {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
     };
-    const foundIcon = menuItems.find((item) => item.path === pathname);
-    if (foundIcon) {
-      setActiveIcon(foundIcon);
-    }
   }, [isDragging, position.x, position.y]);
 
   const handleBubbleMouseDown = (event) => {
@@ -72,7 +68,10 @@ const BubbleSidebar = () => {
       style={{ top: position.y, left: position.x }}
       onMouseDown={handleBubbleMouseDown}
       onClick={handleBubbleClick}
-    ><div className='icons'>{Icon}|| {menuItems.icon}</div>
+    ><div className='icons'>
+    {Icon ? Icon : menuItems.length > 0 && menuItems[0].icon}
+  </div>
+  
       <div className={`bubble-nav${isOpen ? ' open' : ''}`}>
         {menuItems.map((item, index) => (
           <Link key={index} to={item.path}>

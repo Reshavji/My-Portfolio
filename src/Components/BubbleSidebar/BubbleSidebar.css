@@ -1,7 +1,7 @@
 /* Bubble */
 .bubble {
     position: fixed;
-    top: 20px;
+    top: 80px;
     left: 100px;
     background-color: #ff9301;
     height: 55px;
