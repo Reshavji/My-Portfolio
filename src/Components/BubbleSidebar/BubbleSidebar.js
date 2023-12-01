@@ -59,16 +59,23 @@ const BubbleSidebar = () => {
     prevPositionRef.current = { x: touch.clientX, y: touch.clientY };
   };
 
-const handleBubbleClick = (event) => {
-  // Check if an icon inside the sidebar has been clicked
-  const isIconClicked = event.target.classList.contains('nav-item');
-
-  if (!isIconClicked) {
-    // Prevent the default action (routing) if the bubble itself is clicked
-    event.preventDefault();
-    setIsOpen(!isOpen); // Toggle the sidebar if the bubble is clicked
-  }
-};
+  const handleBubbleClick = (event) => {
+    const isBubbleClicked = event.target.closest('.bubble');
+    if (isBubbleClicked) {
+      event.stopPropagation(); // Prevent event propagation
+      event.preventDefault(); // Prevent default action (e.g., navigation)
+      setIsOpen(!isOpen);
+    }
+  };
+  
+  useEffect(() => {
+    if (!isOpen) {
+      setActiveIcon('');
+      setIcon(''); // Reset the icon state as well
+    }
+  }, [isOpen]);
+  
+  
 
   return (
     <div

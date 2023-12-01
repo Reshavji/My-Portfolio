@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  display: flex;
+  display: none;
   transition: transform 0.3s ease-in-out;
   animation: pulseBubble 2s ease-in-out infinite alternate; /* Pulsating animation */
 }
