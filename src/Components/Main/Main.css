@@ -157,6 +157,9 @@
     #name {
       font-size: 3rem;
   }
+  .header{
+    padding: 0px;
+  }
     .profile {
       height: 220px;
       width: 220px;
@@ -165,7 +168,6 @@
       height: 200px;
       width: 200px;
     }
- 
     .sub-title {
       width: 100%;
       padding: 0px 45px 0px 0px;
