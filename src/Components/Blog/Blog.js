@@ -14,7 +14,7 @@ const Blog = () => {
       <div className="blog-data">
         <h2 className="first-tag">Projects</h2>
         <div className="project-container">
-        <a href="https://spiffy-salamander-eed20a.netlify.app/" target="no_follow"> 
+        <a href="https://rji-apple-music.vercel.app/Listen" target="no_follow"> 
              <div className="project-box">
            
                 <div className="project-img">
