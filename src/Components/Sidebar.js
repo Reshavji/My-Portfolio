@@ -14,7 +14,7 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <div className='logo' title='Reshav Ji'>R</div>
+      <div className='logo' title='Reshav Ji'><a href="https://reshavji.vercel.app/home">R</a></div>
       <div className='nav-icon'>
         <ul>
         <Link to="/home">
