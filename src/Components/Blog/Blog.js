@@ -60,7 +60,7 @@ const Blog = () => {
              </div>
              </a>
              
-        <a href="https://rji-movie-deck.netlify.app/" target="no_follow">
+        <a href="https://movie-dec.vercel.app/" target="no_follow">
             <div className="project-box">
                    <div className="project-img">
                     <img id="movie-img" src={Movieimage} alt="Movie" />
