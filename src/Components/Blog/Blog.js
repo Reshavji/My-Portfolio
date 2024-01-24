@@ -50,7 +50,7 @@ const Blog = () => {
                     <h3 className="project-title" >Cybria</h3>
              </div>
              </a>
-             <a href="https://neon-wisp-288f78.netlify.app/" target="no_follow"> 
+             <a href="https://spartans-ten.vercel.app/" target="no_follow"> 
              <div className="project-box">
            
                 <div className="project-img">
