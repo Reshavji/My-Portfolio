@@ -32,13 +32,13 @@ const Blog = () => {
                     <h3 className="project-title" >WhatsApp</h3>
              </div>
              </a>
-             <a href="https://spacec-clone-web.netlify.app/" target="no_follow"> 
+             <a href="https://space-x-chi-brown.vercel.app/home" target="no_follow"> 
              <div className="project-box">
            
                 <div className="project-img">
                     <img id="movie-img" src={Spacex} alt="Movie" />
                     </div>
-                    <h3 className="project-title" >Spacex</h3>
+                    <h3 className="project-title" >SpaceX</h3>
              </div>
              </a>
         <a href="https://cybria.netlify.app/" target="no_follow"> 
