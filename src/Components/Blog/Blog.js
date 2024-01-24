@@ -41,7 +41,7 @@ const Blog = () => {
                     <h3 className="project-title" >SpaceX</h3>
              </div>
              </a>
-        <a href="https://cybria.netlify.app/" target="no_follow"> 
+        <a href="https://cybria-sandy.vercel.app/" target="no_follow"> 
              <div className="project-box">
            
                 <div className="project-img">
